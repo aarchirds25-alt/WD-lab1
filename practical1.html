@@ -1,0 +1,58 @@
+<form action="/submit-form-endpoint" method="POST">
+  
+  <!-- Text Input -->
+  <div>
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+  </div>
+
+  <!-- Email Input -->
+  <div>
+    <label for="userEmail">Email Address:</label>
+    <input type="email" id="userEmail" name="userEmail" placeholder="name@example.com" required>
+  </div>
+
+  <!-- Password Input -->
+  <div>
+    <label for="userPassword">Password:</label>
+    <input type="password" id="userPassword" name="userPassword" required>
+  </div>
+
+  <!-- Dropdown Select Menu -->
+  <div>
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="us">United States</option>
+      <option value="ca">Canada</option>
+      <option value="uk">United Kingdom</option>
+    </select>
+  </div>
+
+  <!-- Radio Buttons (Choose One) -->
+  <div>
+    <p>Subscription Plan:</p>
+    <input type="radio" id="freePlan" name="plan" value="free" checked>
+    <label for="freePlan">Free Trial</label>
+    
+    <input type="radio" id="premiumPlan" name="plan" value="premium">
+    <label for="premiumPlan">Premium</label>
+  </div>
+
+  <!-- Checkbox (Choose Multiple/Consent) -->
+  <div>
+    <input type="checkbox" id="terms" name="terms" value="agreed" required>
+    <label for="terms">I agree to the privacy policy</label>
+  </div>
+
+  <!-- Large Text Area -->
+  <div>
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
+  </div>
+
+  <!-- Submit Button -->
+  <div>
+    <button type="submit">Submit Form</button>
+  </div>
+
+</form>
